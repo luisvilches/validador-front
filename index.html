@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">	
+</head>
+	<body>
+		<div id="load" class="boxLoad" style="display: none;">
+			<div class="spinner"></div> 
+		</div>
+		<section class="container-fluid">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">Validator 3000</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input id="url" type="text" class="form-control" placeholder="Ingresar URL a validar" value="">
+			          <div class="checkbox">
+					    <label>
+					      <input type="checkbox" id="comments"> Validar Comentarios
+					    </label>
+					  </div>
+			          <div class="checkbox">
+					    <label>
+					      <input type="checkbox" id="html"> Validar HTML
+					    </label>
+					  </div>
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox" id="css"> Validar CSS
+					    </label>
+					  </div>			        </div>
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox" id="js"> Validar JS
+					    </label>
+					  </div>
+			        <button id="validar" type="button" class="btn btn-default">Validar</button>
+			      </form>
+			    </div>
+			  </div>
+			</nav>	
+		</section>
+		<section class="container box">
+			<div class="row" id="app"></div>
+		</section>
+		<script type="text/javascript" src="fram.js"></script>
+	</body>
+</html>
